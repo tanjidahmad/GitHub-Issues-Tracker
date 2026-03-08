@@ -19,6 +19,8 @@
 '''forEach(): runs a funtion for every element but it does not return a new array.
 
 4️⃣ What is an arrow function?
+
+
 ...It is a shoter way to write a function in js.it makes the code cleaner and easier to read.
 
 
