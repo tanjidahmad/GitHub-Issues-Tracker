@@ -128,20 +128,25 @@ function filterIssues(status){
     allBtn.classList.remove("btn-primary");
     openBtn.classList.remove("btn-primary");
     closedBtn.classList.remove("btn-primary");
+   
+
 
     if(status === "all"){
         allBtn.classList.add("btn-primary");
+       
         displayIssues(allIssues);
     }
 
     else if(status === "open"){
         openBtn.classList.add("btn-primary");
+        
         const filtered = allIssues.filter(issue => issue.status === "open");
         displayIssues(filtered);
     }
 
     else if(status === "closed"){
         closedBtn.classList.add("btn-primary");
+        
         const filtered = allIssues.filter(issue => issue.status === "closed");
         displayIssues(filtered);
     }
