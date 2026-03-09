@@ -19,28 +19,33 @@
 <body class="bg-white min-h-screen">
 
     <!-- NAVBAR -->
-    <div class="navbar bg-[#F5F6F8] px-6 border-b">
+   <div class="navbar bg-[#F5F6F8] px-6 border-b">
 
-        <!-- LEFT SIDE -->
-        <div class="flex-1 flex items-center gap-2 text-lg font-semibold text-gray-800">
-            <img src="assets/github-logo.png" class="w-6">
-            GitHub Issues Tracker
-        </div>
+<div class="flex-1 flex items-center gap-2 text-lg font-semibold text-gray-800">
+<img src="assets/github-logo.png" class="w-6">
+GitHub Issues Tracker
+</div>
 
-        <!-- RIGHT SIDE -->
-        <div class="flex items-center gap-3">
-            <input id="searchInput"
-                   type="text"
-                   placeholder="Search issues..."
-                   class="w-64 px-3 py-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#4A00FF]">
+<div class="flex flex-col sm:flex-row items-center gap-3">
 
-            <button onclick="searchIssues()"
-                    class="px-4 py-2 text-white rounded-lg bg-[#4A00FF] hover:bg-[#3b00cc] transition">
-                + New Issue
-            </button>
-        </div>
+<input
+id="searchInput"
+type="text"
+placeholder="Search issues..."
+class="w-full sm:w-64 px-3 py-2 bg-white border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-[#4A00FF]"
+>
 
-    </div>
+<button
+onclick="searchIssues()"
+class="w-full sm:w-auto px-4 py-2 text-white rounded-lg bg-[#4A00FF] hover:bg-[#3b00cc] transition">
+
++ New Issue
+
+</button>
+
+</div>
+
+</div>
     <!-- some -->
 
 <div class="max-w-8xl mx-auto">
